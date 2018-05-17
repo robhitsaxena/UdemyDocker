@@ -1,0 +1,25 @@
+=> docker container run --publish 8082:80 nginx
+
+Explanation:
+1. First the nginx image will be downloaded from the docker hub. 
+(if it is not already present in registry)
+2. Started a new container from that image
+3. opened port 8082 on the host IP
+4. Routes that traffic to the container IP and the port 80
+
+=> docker container run --publish 8082:80 nginx
+The "--detach" will run the container in the background
+
+=> docker container ls 
+Will list the running containers
+
+=> docker container ls -a
+will list all the containers
+
+** docker container run -- will always run a new container from the image. 
+
+=> docker container run --publish 8082:80 --detach --name my-nginx nginx
+The "--name" option is used to provide a name to the container.
+
+=> docker container top my-nginx
+List the processes of the container.

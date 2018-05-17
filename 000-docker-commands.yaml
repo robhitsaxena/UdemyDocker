@@ -1,0 +1,20 @@
+docker:
+  => docker 
+  will list most of the commands and sub-commands
+
+docker container run:
+  => docker container run --detach --publish 80:80 --name "name-of-the-container" nginx
+
+docker container ls:
+  => docker container ls
+  => docker container ls -a
+
+docker container top:
+  => docker container top <name-of-the-container"
+  
+docker container rm:
+  => docker container rm <container-name>
+  => docker container rm <container-id>
+  => docker container rm -f 
+
+  
