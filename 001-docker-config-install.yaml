@@ -1,0 +1,15 @@
+## Docker Install and Config related commands
+
+docker version:
+This will show you the version info of the Client(the CLI that we use) 
+and the Server(also called the engine)
+Verifies that the cli can talk to the engine/server
+
+docker info:
+Details of configuraions
+Most config values of the engine
+
+docker:
+will list most of the docker commands
+Docker has two types of commands - Management Commands and the normal commands (sub commands)
+
