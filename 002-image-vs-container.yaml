@@ -1,6 +1,7 @@
 Image:
-An Image is the binaries, the libraries, and the source code that all make up the application.
+- An Image is the binaries, the libraries, and the source code that all make up the application.
+- An Image is the application we want to run.
 
 Container:
-Is the running instance of that image running as a process.
-You can have muliple container all running off the same image.
+- Is the running instance of that image running as a process.
+- You can have muliple container all running off the same image.

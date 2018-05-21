@@ -7,7 +7,7 @@ Explanation:
 3. opened port 8082 on the host IP
 4. Routes that traffic to the container IP and the port 80
 
-=> docker container run --publish 8082:80 nginx
+=> docker container run --publish 8082:80 --detach nginx
 The "--detach" will run the container in the background
 
 => docker container ls 
@@ -23,3 +23,6 @@ The "--name" option is used to provide a name to the container.
 
 => docker container top my-nginx
 List the processes of the container.
+
+=> docker container --help
+Will list all the available commands that can be used with docker container.
