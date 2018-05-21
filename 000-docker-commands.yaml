@@ -4,6 +4,14 @@ docker:
 
 docker container run:
   => docker container run --detach --publish 80:80 --name "name-of-the-container" nginx
+  => What happens in the background--
+    ==> Looks for the image locally in the image cache
+    ==> If image not available in the local cache then check in the image repository (efault - Docker Hub)
+    ==> Download the image
+    ==> Create a new container based on that image and prepares to start
+    ==> Give it a virtual IP on a provate networ inside docker engine
+    ==> opens up the port
+    ==> starts container by using the CMD in the Dockerfile
 
 docker container ls:
   => docker container ls
