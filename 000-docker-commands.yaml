@@ -3,6 +3,7 @@ docker:
   will list most of the commands and sub-commands
 
 docker container run:
+  => docker contianer run [OPTIONS] IMAGE [COMMAND] [ARG...]
   => docker container run --detach --publish 80:80 --name "name-of-the-container" nginx
   => What happens in the background--
     ==> Looks for the image locally in the image cache
