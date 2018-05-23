@@ -3,7 +3,7 @@ docker:
   will list most of the commands and sub-commands
 
 docker container run:
-  => docker contianer run [OPTIONS] IMAGE [COMMAND] [ARG...]
+  => docker contianer run [OPTIONS] IMAGE [COMMAND] [ARG...]:
   => docker container run --detach --publish 80:80 --name "name-of-the-container" nginx
   => What happens in the background--
     ==> Looks for the image locally in the image cache
@@ -35,3 +35,9 @@ docker container inspect:
 docker container stats:
   => performance stats for all containers
   => Display a live stram of container(s) resource usage stats     
+
+docker container port <container-name>:
+  => list the port details
+
+docker contianer inspect --format '{{ .NetworkSettings.IPAddress }}' <container-name>:
+  => inspect the container network  

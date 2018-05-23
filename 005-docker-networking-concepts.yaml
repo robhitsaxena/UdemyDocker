@@ -1,0 +1,13 @@
+Docker Network Defaults:
+  => Each container is connected to a private virtual network "bridge"
+  => Each virtual network routes through NAT firewall on host IP
+  => All containers on a virtual network can talk to each other without -p
+
+  => You can attach containers to more then one vistual network(s) (or none)
+  => Skips virtual networks and use host IP (--net=host)
+
+docker container port <container-name>:
+  => list the port details
+
+docker contianer inspect --format '{{ .NetworkSettings.IPAddress }}' <container-name>:
+  => inspect the container network
