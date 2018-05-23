@@ -1,0 +1,17 @@
+Docker:
+- Docker originally used LinuX Containers (LXC), but later switched to runC (formerly known as libcontainer), 
+  which runs in the same operating system as its host. 
+  This allows it to share a lot of the host operating system resources. 
+  Also, it uses a layered filesystem (AuFS) and manages networking.
+
+- With Docker you get less isolation, but the containers are lightweight (require fewer resources). 
+  So you could easily run thousands of containers on a host, and it won't even blink.
+
+- If you just want to isolate processes from each other and want to run a ton of them 
+  on a reasonably sized host, then Docker/LXC/runC seems to be the way to go.  
+
+VM:
+- A full virtualized system gets its own set of resources allocated to it, 
+  and does minimal sharing. You get more isolation, 
+  but it is much heavier (requires more resources).
+- If you want full isolation with guaranteed resources, a full VM is the way to go.
