@@ -25,4 +25,12 @@ docker container rm:
   => docker container rm <container-id>
   => docker container rm -f 
 
-  
+docker ps:
+  => Old command to list the containers
+
+docker container inspect:
+  => details of container config
+
+docker container stats:
+  => performance stats for all containers
+  => Display a live stram of container(s) resource usage stats     
