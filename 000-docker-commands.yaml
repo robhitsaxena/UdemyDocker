@@ -51,3 +51,17 @@ docker network disconnect:
 docker container run -d --network <net-name> --net-alias <alias-name> <image-name>:
   => gives the net alias to the container which we could use it later:
     => docker container run --rm --net <net-name> <image-name> nslookup <alias-name>
+
+docker image history <image-name>:
+  => shows the history of images and its layers. Each layer has its own sha hash value
+
+docker image inspect <image-name>:
+  => gives the image metadata
+
+docker image tag <source-image-name>[:tag] <target-image-name>[:tag]:
+  => gives a tag to the image
+  => example: docker image tag nginx rsaxena/my-nginx  
+
+docker login:
+  => to login to your hub account  
+  => stores the authentication key in the ".docker/config.json"
