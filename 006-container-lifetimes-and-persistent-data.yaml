@@ -1,0 +1,19 @@
+Containers:
+  => are usually immutable and ephemeral
+
+To make data persistent:
+  => Two ways: Volumes and Bind Mounts.  
+    ==> Volumes: make special location outside of container UFS(unique file system)
+    ==> Bind Mounts: link container path to host path
+
+Volumes or Data Volumes:
+  => Need manual deletion, deleting a container does not result into deletion of volumes
+  => docker volume prune: to delete the volumes not used by atleast one container
+  * named volumes:
+    ==> Friendly way to assign volumes to the containers.
+    ==> Example:
+        ==> docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-vol:/var/lib/mysql mysql
+
+Bind Mounting:
+  => Maps a host file or directory to a container file or directory
+  => Can't use it in the Dockerfile, must be at container run

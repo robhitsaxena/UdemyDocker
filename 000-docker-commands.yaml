@@ -65,3 +65,16 @@ docker image tag <source-image-name>[:tag] <target-image-name>[:tag]:
 docker login:
   => to login to your hub account  
   => stores the authentication key in the ".docker/config.json"
+
+docker volume:
+  => docker volume ls:
+    ==> List the available volumes
+  => docker volume prune:
+    ==> deletes the unused volumes
+  => named volumes:
+    ==> docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-vol:/var/lib/mysql mysql
+  => docker volume create:
+    ==> to create volumes ahead of time, probably because to change the drivers used for the volumes  
+
+Bind Mounting:
+  => docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v /Users/robhit_saxena/docker-mounts/mysql-vol:/var/lib/mysql mysql    
