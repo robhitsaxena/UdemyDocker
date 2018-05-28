@@ -1,0 +1,13 @@
+Docker Compose:
+  => Define and run multi-container applications with Docker.
+  => To configure relationships between containers
+  => save our docker container run settings in easy-to-read files
+  => create one-liner developer environment startups
+  => Comprised of 2 parts:
+      ==> 1. YAML formatted file that describes our solution options for:
+          ==> containers
+          ==> networks
+          ==> volumes
+      ==> 2. CLI tool "docker-compose" used for local dev/test automation using those YAML files
+  => docker-conpose.yaml is the default filename, but we can give a diff name by "docker-compose -f"
+        
